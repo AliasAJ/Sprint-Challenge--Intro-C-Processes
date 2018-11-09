@@ -6,6 +6,7 @@
  */
 int main(int argc, char **argv)
 {
+
   // Parse command line
 
   // Open directory

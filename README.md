@@ -17,9 +17,19 @@ Add your answers inline, below, with your pull request.
 
 1. List all of the main states a process may be in at any point in time on a standard Unix system. Briefly explain what each of these states means.
 
+Start - initial state of a created process
+Ready - Process waits to be assigned
+Running - Process has begun executing
+Waiting - Process moves to a waiting state
+Terminated - process has stopped after execution
+
 2. What is a zombie process? How does one get created? How does one get destroyed?
 
+When the child has finished it's process but the parent has not collected the child's exit status, so the child still has an entry in the process table. a parent must call wait to destroy it
+
 3. What are some of the benefits of working in a compiled language versus a non-compiled language? More specifically, what benefits are there to be had from taking the extra time to compile our code?
+
+Not completely sure, but I heard compiled languages are faster because a program can compile and run all in machine code. An interpreted language's code must be compiled line by line making the process slower
 
 
 ## Task 2
